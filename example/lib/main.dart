@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       home: const Scaffold(
         body: FtcontrolView(
           text: 'Beautiful Error Information',
+          //code: 111,
         ),
       ),
     );

@@ -98,20 +98,14 @@ class FtcontrolViewState extends State<FtcontrolView>
             ),
           ),
           const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+          Center(
+            child: Text(
               widget.code != null
-                  ? Text(
-                      widget.code.toString(),
-                      style: TextStyle(fontSize: widget.size, color: color),
-                    )
-                  : const SizedBox(),
-              Text(
-                widget.text,
-                style: TextStyle(fontSize: widget.size, color: color),
-              ),
-            ],
+                  ? 'Code: ${widget.code} - ${widget.text}'
+                  : widget.text,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: widget.size, color: color),
+            ),
           ),
         ],
       ),
